@@ -28,5 +28,5 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file Room-App/pom.xml
     - name: Execute Jar file
-      run: sudo kill -9 `sudo lsof -t -i:8081` & sudo java -jar /home/ubuntu/action-runner/_work/room-app/room-app/Room-App/target/Room-App-0.0.1-SNAPSHOT.jar 
+      run: sudo kill -9 `sudo lsof -t -i:8081` & sudo java -jar /home/ubuntu/action-runner/_work/room-app/room-app/Room-App/target/Room-App-0.0.1-SNAPSHOT.jar & 
 
